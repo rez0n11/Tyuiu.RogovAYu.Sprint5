@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.RogovAYu.Sprint5.Task0.V15", "Tyuiu.RogovAYu.Sprint5.Task0.V15\Tyuiu.RogovAYu.Sprint5.Task0.V15.csproj", "{C67ADC2C-0132-4DD9-BC0E-154B6D9AA5A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.RogovAYu.Sprint5.Task0.V15.Lib", "Tyuiu.RogovAYu.Sprint5.Task0.V15.Lib\Tyuiu.RogovAYu.Sprint5.Task0.V15.Lib.csproj", "{6E2FE061-B3EF-4129-B3F0-3045948BF2F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C67ADC2C-0132-4DD9-BC0E-154B6D9AA5A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67ADC2C-0132-4DD9-BC0E-154B6D9AA5A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67ADC2C-0132-4DD9-BC0E-154B6D9AA5A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67ADC2C-0132-4DD9-BC0E-154B6D9AA5A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E2FE061-B3EF-4129-B3F0-3045948BF2F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2FE061-B3EF-4129-B3F0-3045948BF2F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2FE061-B3EF-4129-B3F0-3045948BF2F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2FE061-B3EF-4129-B3F0-3045948BF2F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
