@@ -11,11 +11,15 @@ namespace Tyuiu.RogovAYu.Sprint5.Task1.V27.Lib
 
             for (int i = startValue; i <= stopValue; i++)
             {
-                File.AppendAllText(file, F(i));
+                if (i != stopValue)
+                {
+                    File.AppendAllText(file, Convert.ToString(Math.Round((i * 3 - 1.5) / (Math.Sin(i) - 3 + i) + 2, 2)) + "\n");
+                }
+                else { File.AppendAllText(file, Convert.ToString(Math.Round((i * 3 - 1.5) / (Math.Sin(i) - 3 + i) + 2, 2))); }
             }
-            File.AppendAllText(file,"\b");
+      
             return file;
         }
-        public string F(int i) { return Convert.ToString(Math.Round((i * 3 - 1.5) / (Math.Sin(i) - 3 + i)+2, 2))+"\n"; }
+
     }
 }
