@@ -13,8 +13,9 @@ namespace Tyuiu.RogovAYu.Sprint5.Task1.V27.Lib
             {
                 File.AppendAllText(file, F(i));
             }
+            File.AppendAllText("\b");
             return file;
         }
-        public string F(int i) { return Convert.ToString(Math.Round((i * 3 - 1.5) / (Math.Sin(i) - 3 + i), 2)); }
+        public string F(int i) { return Convert.ToString(Math.Round((i * 3 - 1.5) / (Math.Sin(i) - 3 + i)+2, 2))+"\n"; }
     }
 }
