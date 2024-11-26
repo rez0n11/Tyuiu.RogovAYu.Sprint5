@@ -9,7 +9,7 @@ namespace Tyuiu.RogovAYu.Sprint5.Task3.V14.Lib
         public string SaveToFileTextData(int x)
         {
             string file = Path.GetTempFileName();
-            double res = 4 * x * x * x / (x * x * x - 1);
+            double res = Math.Round((4 * Math.Pow(x,3))/ (Math.Pow(x,3) - 1),3);
             using (BinaryWriter writer = new BinaryWriter(File.Open(file, FileMode.OpenOrCreate), Encoding.UTF8))
             {
                 writer.Write(BitConverter.GetBytes(res));
