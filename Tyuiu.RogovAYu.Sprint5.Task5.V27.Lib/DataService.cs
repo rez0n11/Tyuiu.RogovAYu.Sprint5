@@ -6,16 +6,18 @@ namespace Tyuiu.RogovAYu.Sprint5.Task5.V27.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            string s = File.ReadAllText(path);
-            string[] str = s.Split('\n');
-            int i=0; double j=0;
-            foreach (string ss in str) 
-            { 
-                if (Convert.ToDouble(ss.Trim()) % 5 == 0)
+            using (StreamReader sr = new StreamReader(path))
+            {
+                double res=0;
+                int i= 0;
+                string line;
+                while ((line = sr.ReadLine()) != null && Convert.ToDouble(line)%5==0)
                 {
-                    i++; j += Convert.ToDouble(ss.Trim());
+                    res += Convert.ToDouble(line);
+                    i++;
                 }
             }
+
             return j / i;
         }
     }
