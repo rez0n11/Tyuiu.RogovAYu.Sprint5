@@ -16,9 +16,10 @@ namespace Tyuiu.RogovAYu.Sprint5.Task5.V27.Lib
                     res += Convert.ToDouble(line);
                     i++;
                 }
+                return (res / i);
             }
 
-            return j / i;
+            
         }
     }
 }
