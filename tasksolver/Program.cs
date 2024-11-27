@@ -1,19 +1,11 @@
-﻿double start = 1, end = 2, step = 1;
-
-string outputFile = "OutPutFileTaskl.txt";
-
-for (double x = start; x <= end; x += step)
-
+﻿string text = "2, 18, 4, -9, 4, 10, 18, 19, 16";
+string[] strings = text.Split(",");
+List<string> oddNumbers = new List<string>();
+foreach (string str in strings)
 {
-    double result = 2 * x + 3 * Math.Pow(x, 2) + 4;
-    if (double.IsInfinity(result) || double.IsNaN(result))
-    {
+     if (int.TryParse(str.Trim(), out int number) && number % 2 != 0)
+{
+        oddNumbers.Add(str);
+    } }
 
-        result = 0;
-
-    }
-    result = Math.Round(result, 2);
-    File.AppendAllText(outputFile, $"{result}\n");
-    Console.WriteLine($"{result}");
-
-}
+Console.WriteLine(String.Join("\n",oddNumbers));
