@@ -24,9 +24,9 @@ namespace Tyuiu.RogovAYu.Sprint5.Task5.V27.Lib
 
             foreach (string s in a)
             {
-                if (Convert.ToDouble(s.Trim(' ')) % 5 == 0)
+                if (Convert.ToDouble(s.Replace('.', ',').Trim(' ')) % 5 == 0)
                 {
-                    r += Convert.ToDouble(s.Trim(' ').Trim().Trim('\n')); i++;
+                    r += Convert.ToDouble(s.Replace('.', ',').Trim(' ').Trim().Trim('\n')); i++;
                 }
             }
                 return r / i;
