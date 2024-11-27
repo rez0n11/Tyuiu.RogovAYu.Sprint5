@@ -11,9 +11,9 @@ namespace Tyuiu.RogovAYu.Sprint5.Task5.V27.Lib
             string line;
             while ((line = sr.ReadLine()) != null)
             {
-                if (Convert.ToDouble(line)%5==0)
+                if (Convert.ToDouble(line.Replace('.',','))%5==0)
                 {
-                    r += Convert.ToDouble(line);
+                    r += Convert.ToDouble(line.Replace('.', ','));
                     i++;
                 }
             }
