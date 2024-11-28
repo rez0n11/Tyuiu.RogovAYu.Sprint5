@@ -9,7 +9,7 @@ namespace Tyuiu.RogovAYu.Sprint5.Task7.V20.Test
         public void TestMethod1()
         {
             DataService ds = new();
-            Assert.AreEqual("Ссловарные слова с удвоенной согласной нн", ds.LoadDataAndSave(Path.Combine("C:","DataSprint5","InPutDataFileTask7V20.txt")));
+            Assert.AreEqual("Словарные слова с удвоенной согласной нн", ds.LoadDataAndSave(Path.Combine("C:","DataSprint5","InPutDataFileTask7V20.txt")));
         }
     }
 }
